@@ -1,0 +1,9 @@
+.nav-logo-tt {
+    width: 10%;
+}
+
+@media (max-width: 768.5px) {
+    .nav-logo-tt {
+        width: 0%;
+    }
+}
