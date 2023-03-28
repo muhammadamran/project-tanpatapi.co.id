@@ -30,6 +30,19 @@
     <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VG2YZSR639"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VG2YZSR639');
+    </script>
 </head>
 
 <style>
@@ -37,7 +50,7 @@
         /* font-family: Poppins; */
         /* font-family: 'Montserrat-Bold'; */
         /* font-weight: 600; */
-        font-family: Montserrat, sans-serif;
+        font-family: Poppins, sans-serif;
     }
 </style>
 
