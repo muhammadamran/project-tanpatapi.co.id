@@ -51,7 +51,6 @@
                 </div>
                 <div class="col-md-6 text-center fh5co-heading">
                     <div style="margin-bottom: 20px;text-align: center;">
-                        <!-- <font class="hubungi-kami"><i>Hubungi Kami</i></font> -->
                         <img src="<?= $logoFooter; ?>" width="130px" alt="Logo Footer">
                     </div>
                     <div>
@@ -69,7 +68,7 @@
         </div>
     </div>
 
-    <div class="row copyright" style="margin-bottom: -130px;margin-top: 70px;background: #fba919;">
+    <div class="row copyright" id="hellosid">
         <div class="col-md-12 text-center">
             <ul class="fh5co-social-icons" style="margin-top: 0px;">
                 <li><a href="https://www.hellos-id.com" target="_blank" style="color: #fff;font-weight: 100;font-size: 14px;"> Powered by <b>HELLOS<sup>ID</sup></b></a></li>

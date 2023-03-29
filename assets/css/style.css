@@ -455,7 +455,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-section p {
-  color: rgba(255, 255, 255, 0.3);
+  /* color: rgba(255, 255, 255, 0.3); */
   font-size: 18px;
   line-height: 1.5;
 }
@@ -779,7 +779,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
 }
 #fh5co-started .overlay {
-  z-index: 999;
+  z-index: 0;
   position: absolute;
   bottom: 0;
   top: 0;

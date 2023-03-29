@@ -99,13 +99,15 @@
     font-size: 30px;
     color: #2b6796;
     font-weight: 700;
+    line-height: 35px;
 }
 
 /* End */
 
 /* button */
 .btn-default {
-    font-family: Montserrat-Bold, sans-serif;
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
     border-radius: 50px;
     background: #2b6796;
     border-color: #2b6796;
@@ -116,7 +118,8 @@
 
 .btn-default:hover {
     box-shadow: 1px 3px 0px 0px #2b6796;
-    font-family: Montserrat-Bold, sans-serif;
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
     border-radius: 50px;
     background: #fba919;
     border-color: #fba919;
@@ -126,9 +129,10 @@
     box-shadow: 4px 5px 2px 0px #2b6796 !important;
 }
 
-.btn-default {
+.btn-default:active {
     box-shadow: 1px 3px 0px 0px #2b6796;
-    font-family: Montserrat-Bold, sans-serif;
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
     border-radius: 50px;
     background: #fba919;
     border-color: #fba919;
@@ -147,7 +151,6 @@
 .d-bl-menu {
     display: grid;
     justify-content: start;
-    margin-bottom: 50px;
 }
 
 .graf-menu {
@@ -201,7 +204,18 @@
     }
 
     .img-menu-s {
-        width: 330px;
+        width: 285px;
+    }
+}
+
+@media (max-width:310.5px) {
+    .mar-mar {
+        background-color: #fff;
+        margin: -50px -50px 0px -50px;
+    }
+
+    .img-menu-s {
+        width: 240px;
     }
 }
 
@@ -257,6 +271,14 @@
 }
 
 @media (max-width:449.5px) {
+    .direct-position {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        margin-bottom: -70px;
+    }
+
     .tombol-direct {
         font-family: Montserrat-Bold, sans-serif;
         border-radius: 50px;
@@ -272,5 +294,19 @@
 
     .tombol-wa-icon {
         width:35px;
+    }
+}
+
+#hellosid {
+    margin-bottom: -130px;
+    margin-top: 70px;
+    background: #fba919;
+}
+
+@media (max-width:768.5px) {
+    #hellosid {
+        margin-bottom: -85px;
+        margin-top: 20px;
+        background: #fba919;
     }
 }

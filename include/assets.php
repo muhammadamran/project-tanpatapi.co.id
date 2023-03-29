@@ -1,4 +1,9 @@
 <?php
+// ICON & LOGO
+$icon           = 'assets/apps/icon/icon.svg';
+$logo           = 'assets/apps/icon/icon.svg';
+// END
+
 // Navbar
 $navbar         = 'assets/temp/navbar/menu-bg.svg';
 $logo           = 'assets/temp/logo/logo-blue.png';

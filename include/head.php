@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tasty &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+    <meta name="<?= $seodesc; ?>" content="<?= $seodesc; ?>">
+    <meta name="<?= $seodesc; ?>" content="<?= $seodesc; ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= $icon; ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= $icon; ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= $icon; ?>">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/animate.css">
