@@ -1,72 +1,4 @@
 <footer id="fh5co-footer" role="contentinfo" class="fh5co-section" style="background-image: url('<?= $footer; ?>');">
-    <!-- <div class="container" style="margin-bottom: -40px;">
-        <div class="row">
-            <div class="col-md-4 fh5co-widget">
-                <div style="margin-bottom: 20px;">
-                    <font class="hubungi-kami"><i>Hubungi Kami</i></font>
-                </div>
-                <ul class="fh5co-footer-links">
-                    <li>
-                        <div style="display:flex;justify-content:flex-start;align-items:flex-start">
-                            <div>
-                                <img src="assets/icon/whatsapp.png" width="25px" alt="Whatsapp">
-                            </div>
-                            <div style="margin-left: 10px;">
-                                <font class="hubungi-kami-list"><i>(+62) <?= $WA; ?></i></font>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div style="display:flex;justify-content:flex-start;align-items:flex-start">
-                            <div>
-                                <img src="assets/icon/instagram.png" width="25px" alt="Instagram">
-                            </div>
-                            <div style="margin-left: 10px;">
-                                <font class="hubungi-kami-list"><i><?= $IG; ?></i></font>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div style="display:flex;justify-content:flex-start;align-items:flex-start">
-                            <div>
-                                <img src="assets/icon/mail.png" width="25px" alt="Mail">
-                            </div>
-                            <div style="margin-left: 10px;">
-                                <font class="hubungi-kami-list"><i><?= $GM; ?></i></font>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div style="display:flex;justify-content:flex-start;align-items:flex-start">
-                            <div>
-                                <img src="assets/icon/pin.png" width="25px" alt="Address">
-                            </div>
-                            <div style="margin-left: 10px;">
-                                <font class="hubungi-kami-list"><i><?= $LO; ?></i></font>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-8 col-md-push-1 fh5co-widget" id="lo-fo-one">
-                <div class="lo-fo">
-                    <div class="lo-of">
-                        <img src="<?= $logoFooter; ?>" width="130px" alt="Logo Footer">
-                    </div>
-                    <div class="lo-dis">
-                        <p class="text-center mb-0" style="color:#fff;font-size:16px">
-                            &copy; tanpatapi.co.id
-                            <?php if (date('Y') == '2023') { ?>
-                                <?= date('Y'); ?>
-                            <?php } else { ?>
-                                2023 - <?= date('Y'); ?>
-                            <?php } ?>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="container">
         <div class="row animate-box">
             <div class="signature">
@@ -136,6 +68,15 @@
             </div>
         </div>
     </div>
+
+    <div class="row copyright" style="margin-bottom: -130px;margin-top: 70px;background: #fba919;">
+        <div class="col-md-12 text-center">
+            <ul class="fh5co-social-icons" style="margin-top: 0px;">
+                <li><a href="https://www.hellos-id.com" target="_blank" style="color: #fff;font-weight: 100;font-size: 14px;"> Powered by <b>HELLOS<sup>ID</sup></b></a></li>
+            </ul>
+        </div>
+    </div>
+
 </footer>
 </div>
 <div class="gototop js-top">

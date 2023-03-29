@@ -125,6 +125,18 @@
     letter-spacing: 1px;
     box-shadow: 4px 5px 2px 0px #2b6796 !important;
 }
+
+.btn-default {
+    box-shadow: 1px 3px 0px 0px #2b6796;
+    font-family: Montserrat-Bold, sans-serif;
+    border-radius: 50px;
+    background: #fba919;
+    border-color: #fba919;
+    color: #fff;
+    font-size: 14px !important;
+    letter-spacing: 1px;
+    box-shadow: 4px 5px 2px 0px #2b6796 !important;
+}
 /* end */
 
 .d-bl {
@@ -207,4 +219,58 @@
     color: #fff;
     font-weight: lighter;
     font-family: system-ui;
+}
+
+.direct-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: -153px;
+}
+
+.tombol-direct {
+    font-family: Montserrat-Bold, sans-serif;
+    border-radius: 50px;
+    background: #fff;
+    border-color: #fff;
+    color: #000;
+    font-size: 35px !important;
+    letter-spacing: 1px;
+    padding: 20px 50px 20px 50px;
+    /* top: 0px; */
+    /* z-index: 1; */
+}
+
+.tombol-wa-icon {
+    width:45px;
+}
+
+@media (max-width:768.5px) {
+    .direct-position {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        margin-bottom: -80px;
+    }
+}
+
+@media (max-width:449.5px) {
+    .tombol-direct {
+        font-family: Montserrat-Bold, sans-serif;
+        border-radius: 50px;
+        background: #fff;
+        border-color: #fff;
+        color: #000;
+        font-size: 20px !important;
+        letter-spacing: 1px;
+        padding: 20px 50px 20px 50px;
+        /* top: 0px; */
+        /* z-index: 1; */
+    }
+
+    .tombol-wa-icon {
+        width:35px;
+    }
 }

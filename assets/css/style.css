@@ -779,13 +779,13 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
 }
 #fh5co-started .overlay {
-  z-index: 0;
+  z-index: 999;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
 }
 #fh5co-started .fh5co-heading {
   margin-bottom: 0;
