@@ -1326,7 +1326,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: absolute;
   z-index: 1901;
   width: 270px;
-  background: #000 url(../images/broken_noise.png) repeat;
+  background: #2b6796;
   top: 0;
   right: 0;
   top: 0;
@@ -1342,10 +1342,14 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  font-size: 16px;
+  font-weight: 200;
+  color: #fba919;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   #fh5co-offcanvas {
-    background: #000 url(../images/broken_noise.png) repeat;
+    background: #2b6796;
+    color: #fba919;
   }
 }
 @media screen and (max-width: 768px) {

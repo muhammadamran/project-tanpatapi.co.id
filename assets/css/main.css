@@ -310,3 +310,32 @@
         background: #fba919;
     }
 }
+
+.img-menu-s-kn {
+    width: 515px;
+    border-radius: 150px;
+}
+
+@media (max-width:1199.5px) {
+    .img-menu-s-kn {
+        width: 415px;
+    }
+}
+
+@media (max-width:477.5px) {
+    .img-menu-s-kn {
+        width: 330px;
+    }
+}
+
+@media (max-width:435.5px) {
+    .img-menu-s-kn {
+        width: 285px;
+    }
+}
+
+@media (max-width:310.5px) {
+    .img-menu-s-kn {
+        width: 240px;
+    }
+}
