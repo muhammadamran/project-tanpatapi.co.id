@@ -1,5 +1,5 @@
-<footer class="nk-footer" style="background-image: url('<?= $background2; ?>');background-position: center center;background-size: cover;margin-top: -720px;">
-    <div style="padding: 662px;"></div>
+<footer class="nk-footer" style="background-image: url('<?= $background2; ?>');background-position: center center;background-size: cover;" id="baba">
+    <div class="nana-aja"></div>
 </footer>
 <footer class="nk-footer" style="background-image: url('<?= $footer; ?>');background-repeat: no-repeat;background-size: cover;">
     <div class="nk-footer-cont">

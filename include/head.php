@@ -43,4 +43,4 @@
     </script>
 </head>
 
-<body>
+<body id="bg-body">

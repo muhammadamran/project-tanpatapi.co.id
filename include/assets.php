@@ -23,3 +23,6 @@ $IG             = '@tanpatapi';
 $GM             = 'info@tanpatapi.co.id';
 $LO             = 'Jalan Sari No 2A, Kebon Jeruk, Jakarta Barat, DKI Jakarta';
 // End Footer
+
+// Signature images
+$menuSignature = 'assets/temp/signature/';

@@ -7,7 +7,7 @@
                     <div class="nav-tanpatapi-one">
                         <a href="index.html" class="nk-nav-logo">
                             <img src="<?= $navbarL; ?>" alt="" width="150" class="nk-nav-logo-onscroll">
-                            <img src="<?= $navbarL; ?>" alt="" width="150">
+                            <!-- <img src="<?= $navbarL; ?>" alt="" width="150"> -->
                         </a>
                     </div>
                     <div class="nav-tanpatapi-two">

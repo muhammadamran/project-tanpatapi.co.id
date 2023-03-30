@@ -4577,10 +4577,10 @@ h4 {
   font-weight: 500;
 }
 .row.vertical-gap > [class*="col-"] {
-  padding-top: 30px;
+  padding-top: 0px;
 }
 .row.vertical-gap {
-  margin-top: -30px;
+  margin-top: -0px;
 }
 .col-lg-1,
 .col-lg-2,
