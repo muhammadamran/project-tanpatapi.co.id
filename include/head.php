@@ -11,12 +11,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?= $icon; ?>">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/icomoon.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/flexslider.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/modernizr-2.6.2.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/combined.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- LOAD AMRAN -->
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- Font Poppins -->
@@ -46,17 +43,4 @@
     </script>
 </head>
 
-<style>
-    body {
-        /* font-family: Poppins; */
-        /* font-family: 'Montserrat-Bold'; */
-        /* font-weight: 600; */
-        font-family: Poppins, sans-serif;
-    }
-</style>
-
 <body>
-
-    <div class="fh5co-loader"></div>
-
-    <div id="page">

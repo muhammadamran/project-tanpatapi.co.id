@@ -40,6 +40,11 @@ include "include/navbar.php";
                     </div>
                 </div>
             </div>
+            <div class="signature" style="margin-top:20px;margin-bottom: 30px;">
+                <div class="col-md-12 text-center fh5co-heading">
+                    <img src="assets/temp/tumpeng/tumpeng.png" width="70%" alt="">
+                </div>
+            </div>
         </div>
         <div class="row animate-box" style="margin-bottom: 80px;">
             <div class="signature" style="margin-bottom: 40px;justify-content:space-between">
@@ -47,7 +52,41 @@ include "include/navbar.php";
                     <div class="d-bl-menu">
                         <div class="row">
                             <div class="col-md-9">
-                                <font class="f-nama-menu">NASI AYAM TANGKAP</font>
+                                <font class="f-nama-menu">TUMPENG TANPATAPI</font>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-bl">
+                        <div style="margin-top: 10px;margin-bottom: 25px;text-align: justify;">
+                            <font style="color:#414042 !important;">
+                                <p>
+                                    Tumpeng dengan menu yang lengkap dan tersedia
+                                    dalam beragam ukuran. Setiap Tumpeng Tanpatapi
+                                    akan tersaji dengan Nasi Kuning yang pulen, Ayam
+                                    Goreng, Empal Suwir, Kering Tempe Kacang, Telur
+                                    Dadar Rawis, Perkedel Kentang, Urap, dan Mie
+                                    Goreng
+                                </p>
+                            </font>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center fh5co-heading">
+                    <div style="margin: 10px;">
+                        <div style="padding: 10px;">
+                            <img src="assets/temp/tumpeng/tumpeng-mini.png" class="img-menu-s" alt="Menu 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row animate-box" style="margin-bottom: 80px;">
+            <div class="signature" style="margin-bottom: 40px;justify-content:space-between">
+                <div class="col-md-4 fh5co-heading">
+                    <div class="d-bl-menu">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <font class="f-nama-menu">TUMPENG MINI</font>
                             </div>
                         </div>
                     </div>
@@ -75,10 +114,8 @@ include "include/navbar.php";
                 </div>
                 <div class="col-md-6 text-center fh5co-heading">
                     <div style="margin: 10px;">
-                        <div style="background-color: #fff;">
-                            <div style="padding: 10px;">
-                                <img src="assets/temp/signature/menu1.JPG" class="img-menu-s" alt="Menu 1">
-                            </div>
+                        <div style="padding: 10px;">
+                            <img src="assets/temp/tumpeng/tumpeng-mini.png" class="img-menu-s" alt="Menu 1">
                         </div>
                     </div>
                 </div>

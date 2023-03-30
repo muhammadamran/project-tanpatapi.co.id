@@ -5,13 +5,18 @@ $logo           = 'assets/apps/icon/icon.svg';
 // END
 
 // Navbar
-$navbar         = 'assets/temp/navbar/menu-bg.svg';
-$logo           = 'assets/temp/logo/logo-blue.png';
+$navbarL        = 'assets/temp/logo/logo-black.png';
+$navbar         = 'assets/temp/navbar/navbar.png';
 // End Navbar
 
+// Background
+// $background     = 'assets/temp/background/background.svg';
+$background1    = 'assets/temp/background/background.png';
+$background2    = 'assets/temp/background/background-2.png';
+// End Background
+
 // Footer
-$logoFooter     = 'assets/temp/logo-footer/logo-black.png';
-$footer         = 'assets/temp/footer/footer-bg.svg';
+$footer         = 'assets/temp/footer/footer.png';
 
 $WA             = '';
 $IG             = '@tanpatapi';
