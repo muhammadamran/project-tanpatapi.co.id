@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="<?= $seodesc; ?>" content="<?= $seodesc; ?>">
     <meta name="<?= $seodesc; ?>" content="<?= $seodesc; ?>">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= $icon; ?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= $icon; ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= $icon; ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= $ICON_W; ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= $ICON_W; ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= $ICON_W; ?>">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
@@ -28,7 +28,8 @@
     <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <!-- Loading -->
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VG2YZSR639"></script>
     <script>
@@ -44,3 +45,11 @@
 </head>
 
 <body id="bg-body">
+    <div class="preloader">
+        <div class="loading">
+            <img src="assets/temp/logo/logo-black.png" width="150">
+            <br>
+            <div class="loading-divider"></div>
+            <font class="text-loading-wait">Please wait ...</font>
+        </div>
+    </div>

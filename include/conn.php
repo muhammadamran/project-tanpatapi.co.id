@@ -65,6 +65,8 @@ if ($loadConfig == NULL) {
 }
 // END LOAD SETTING
 
+$ICON_W = 'assets/temp/logo/logo-black.png';
+
 class helpers
 {
     function dateIndonesia($date)

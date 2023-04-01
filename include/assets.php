@@ -17,11 +17,13 @@ $background2    = 'assets/temp/background/background-2.png';
 
 // Footer
 $footer         = 'assets/temp/footer/footer.png';
+$logoFooter     = 'assets/temp/logo-footer/logo-black.png';
 
-$WA             = '';
-$IG             = '@tanpatapi';
-$GM             = 'info@tanpatapi.co.id';
-$LO             = 'Jalan Sari No 2A, Kebon Jeruk, Jakarta Barat, DKI Jakarta';
+$WA             = '81387100030';
+$DWA            = '6281387100030';
+$IG             = '@tanpatapi.kitchen';
+$GM             = 'tanpatapikitchen@gmail.com';
+$LO             = 'Jalan Saari No 2A, Kebon Jeruk, Jakarta Barat';
 // End Footer
 
 // Signature images

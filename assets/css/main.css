@@ -1,3 +1,70 @@
+@font-face {
+    font-family: 'Adelyne';
+    src: url('../fonts/The Adelyne Script.otf');
+}
+
+@font-face {
+    font-family: 'Scriptyca';
+    src: url('../fonts/Scriptyca 400.otf');
+}
+
+@font-face {
+    font-family: 'Parisienne';
+    src: url('../fonts/Parisienne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Homerun';
+    src: url('../fonts/Homerun Demo.otf');
+}
+
+@font-face {
+    font-family: 'High';
+    src: url('../fonts/High Spirited.ttf');
+}
+
+#gaya {
+    font-family: High;
+    font-weight: 800;
+    color:#f99d1b;
+    font-size: 40px;
+}
+
+/*loading*/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #f99d1b;
+}
+
+.preloader .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font: 14px arial;
+}
+
+.loading-divider {
+    background: #f99d1b;
+    height: 5px;
+    margin: 15px 5px -1px;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.text-loading-wait {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Poppins, Open Sans, Helvetica, Arial, sans-serif;
+    color: #000;
+}
+
 .nav-tanpatapi {
     display: grid;
     justify-content: center;
@@ -15,21 +82,27 @@
 }
 
 #hg {
-    height: 250vh;
+    height: 100%;
 }
 
 #bg-body {
-    background: transparent;
+    background: #fff9ed;
 }
 
 #baba {
-    margin-top: -720px;
+    margin-top: 0px;
 }
 
 #samakan {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#khas-kansama {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .graph {
@@ -40,6 +113,21 @@
     line-height: 28px;
     letter-spacing: 0px;
     color: #303030;
+}
+
+.solid {
+    margin-top: 165px;
+    border-left: 5px #f99d1b solid;
+    height: 740px;
+    width: 0px;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+@media (max-width:991.5px) {
+    .solid {
+        display: none;
+    }
 }
 
 .btn-default-web {
@@ -95,15 +183,160 @@
     margin-top: 0px;
 }
 
+.bingkai-khas {
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0px;
+    border-radius: 110px;
+}
+
 .img-siganture {
     width: 520px;
+}
+
+.img-khas {
+    width: 520px;
+    border-radius: 110px;
+}
+
+.img-kudapan {
+    width: 900px;
 }
 
 .nana-aja {
     padding: 662px;
 }
 
+/* BTN WA */
+.direct-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    margin-bottom: -25px;
+}
+
+.tombol-direct {
+    font-family: Montserrat-Bold, sans-serif;
+    border-radius: 50px;
+    background: #fff;
+    border-color: #fff;
+    color: #000;
+    font-size: 35px !important;
+    letter-spacing: 1px;
+    padding: 20px 50px 24px 50px;
+    /* top: 0px; */
+    /* z-index: 1; */
+}
+
+.tombol-wa-icon {
+    width: 45px;
+}
+
+.oke-bagi {
+    margin-top: 40px;
+}
+
+@media (max-width:768.5px) {
+    .direct-position {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -35px;
+        margin-bottom: -25px;
+    }
+
+
+}
+
+@media (max-width:449.5px) {
+    .direct-position {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -22px;
+        margin-bottom: -15px;
+    }
+
+
+    .tombol-direct {
+        font-family: Montserrat-Bold, sans-serif;
+        border-radius: 50px;
+        background: #fff;
+        border-color: #fff;
+        color: #000;
+        font-size: 20px !important;
+        letter-spacing: 1px;
+        padding: 20px 50px 20px 50px;
+        /* top: 0px; */
+        /* z-index: 1; */
+    }
+
+    .tombol-wa-icon {
+        width: 35px;
+    }
+}
+
+/* END BTN WA */
+
+.hubungi-kami {
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
+    color: #fff;
+    font-size: 18px;
+}
+
+.hubungi-kami-list {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 16px;
+}
+
+.f-tanpatapi {
+    color: #fff;
+    font-weight: lighter;
+    font-family: system-ui;
+}
+
+.nah-ini {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 180px 0px 180px;
+}
+
+.nah-ini-sudah {
+    display: none;
+}
+
+@media (max-width:1042.5px) {
+    .nah-ini {
+        display: none;
+    }
+}
+
+@media (max-width:1042.5px) {
+    .nah-ini-sudah {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.dada-oke {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
 @media (max-width:991.5px) {
+    .oke-bagi {
+        margin-top: 10px;
+    }
+
     .nav-tanpatapi-one {
         display: flex;
         justify-content: center;
@@ -114,14 +347,32 @@
         display: grid;
     }
 
+    #khas-kansama {
+        display: grid;
+    }
+
     .bingkai-signature {
         margin-top: 25px;
+    }
+
+    .bingkai-khas {
+        margin-top: 25px;
+        border-radius: 110px;
     }
 }
 
 @media (max-width:1280.5px) {
     .img-siganture {
         width: 510px;
+    }
+
+    .img-khas {
+        width: 510px;
+        border-radius: 110px;
+    }
+
+    .img-kudapan {
+        width: 728px;
     }
 
     .nana-aja {
@@ -131,11 +382,11 @@
     #hg {
         height: 100%;
     }
-    
+
     #bg-body {
         background: #fff9ed;
     }
-    
+
     #baba {
         margin-top: 0px;
     }
@@ -146,6 +397,15 @@
         width: 425px;
     }
 
+    .img-khas {
+        width: 425px;
+        border-radius: 110px;
+    }
+
+    .img-kudapan {
+        width: 728px;
+    }
+
     .nana-aja {
         padding: 375px;
     }
@@ -153,11 +413,11 @@
     #hg {
         height: 100%;
     }
-    
+
     #bg-body {
         background: #fff9ed;
     }
-    
+
     #baba {
         margin-top: 0px;
     }
@@ -168,18 +428,27 @@
         width: 670px;
     }
 
+    .img-khas {
+        width: 670px;
+        border-radius: 110px;
+    }
+
+    .img-kudapan {
+        width: 900px;
+    }
+
     .nana-aja {
-        padding: 260px;
+        padding: 280px;
     }
 
     #hg {
         height: 100%;
     }
-    
+
     #bg-body {
         background: #fff9ed;
     }
-    
+
     #baba {
         margin-top: 0px;
     }
@@ -190,6 +459,15 @@
         width: 670px;
     }
 
+    .img-khas {
+        width: 670px;
+        border-radius: 110px;
+    }
+
+    .img-kudapan {
+        width: 685px;
+    }
+
     .nana-aja {
         padding: 260px;
     }
@@ -197,11 +475,11 @@
     #hg {
         height: 100%;
     }
-    
+
     #bg-body {
         background: #fff9ed;
     }
-    
+
     #baba {
         margin-top: 0px;
     }
@@ -212,18 +490,27 @@
         width: 380px;
     }
 
+    .img-khas {
+        width: 380px;
+        border-radius: 110px;
+    }
+
+    .img-kudapan {
+        width: 380px;
+    }
+
     .nana-aja {
-        padding: 100px;
+        padding: 150px;
     }
 
     #hg {
         height: 100%;
     }
-    
+
     #bg-body {
         background: #fff9ed;
     }
-    
+
     #baba {
         margin-top: 0px;
     }
@@ -231,7 +518,24 @@
 
 @media (max-width:414.5px) {
     .img-siganture {
-        width: 365px;
+        width: 335px;
+    }
+
+    .img-khas {
+        width: 335px;
+        border-radius: 110px;
+    }
+
+    .img-kudapan {
+        width: 345px;
+    }
+
+    .direct-position {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+        margin-bottom: -20px;
     }
 }
 
@@ -239,10 +543,57 @@
     .img-siganture {
         width: 330px;
     }
+
+    .img-khas {
+        width: 330px;
+        border-radius: 110px;
+    }
+
+    .img-kudapan {
+        width: 345px;
+    }
+
+    .direct-position {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
 }
 
 @media (max-width:320.5px) {
     .img-siganture {
         width: 275px;
+    }
+
+    .img-khas {
+        width: 275px;
+        border-radius: 110px;
+    }
+
+    .img-kudapan {
+        width: 345px;
+    }
+
+    .direct-position {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+
+    .tombol-direct {
+        font-family: Montserrat-Bold, sans-serif;
+        border-radius: 50px;
+        background: #fff;
+        border-color: #fff;
+        color: #000;
+        font-size: 14px !important;
+        letter-spacing: 1px;
+        padding: 20px 50px 20px 50px;
+        /* top: 0px; */
+        /* z-index: 1; */
     }
 }

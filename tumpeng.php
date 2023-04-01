@@ -6,125 +6,159 @@ include "include/assets.php";
 include "include/head.php";
 include "include/navbar.php";
 ?>
-<title>Tumpeng | Official Webiste tanpatapi.co.id</title>
-<div class="after-nav"></div>
-<div id="fh5co-started" class="fh5co-section animate-box" style="background-image: url(assets/images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container" style="margin-bottom: 380px;">
-        <div class="row animate-box" style="margin-bottom: 80px;">
-            <div class="signature">
-                <div class="col-md-6 text-center fh5co-heading">
-                    <div class="d-bl">
+<title>Tumpeng | Official Website</title>
+<div class="nk-main" style="background-image: url('<?= $background1; ?>');background-repeat: no-repeat;background-size: cover;z-index: 1;" id="hg">
+    <div class="container">
+        <div class="nk-portfolio-single">
+            <div class="nk-gap-3 mb-14"></div>
+            <!-- start 1 -->
+            <div class="row vertical-gap" id="samakan">
+                <div class="col-lg-4">
+                    <div>
                         <div>
-                            <font class="f-biasa">Tanpatapi's</font>
+                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;"><b>Tanpatapi’s</b></font>
                         </div>
-                        <div style="margin-right: 100px;margin-top: -30px;">
-                            <font class="f-latin">Tumpeng</font>
+                        <div style="margin-top: -30px;">
+                            <font class="nk-portfolio-title display-4" id="gaya">Tumpeng</font>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 text-center fh5co-heading">
-                    <div style="text-align: justify;">
-                        <font style="color:#414042 !important;">
-                            <p>
-                                Tanpatapi's Signature merupakan perpaduan masakan khas Nusantara
-                                dan Mancanegara dengan bumbu khas melalui tangan ajaib Chef
-                                Palitho.
-                            </p>
-                            <p>
-                                Dengan ini, Tanpatapi Kitchen merangkum semua kuliner dari berbagai
-                                negara dalam sebuah kotak. Tanpatapi Kitchen siap untuk memanjakan
-                                lidah Anda melalui kotak yang kami sajikan.
-                            </p>
-                        </font>
-                    </div>
-                </div>
-            </div>
-            <div class="signature" style="margin-top:20px;margin-bottom: 30px;">
-                <div class="col-md-12 text-center fh5co-heading">
-                    <img src="assets/temp/tumpeng/tumpeng.png" width="70%" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="row animate-box" style="margin-bottom: 80px;">
-            <div class="signature" style="margin-bottom: 40px;justify-content:space-between">
-                <div class="col-md-4 fh5co-heading">
-                    <div class="d-bl-menu">
-                        <div class="row">
-                            <div class="col-md-9">
-                                <font class="f-nama-menu">TUMPENG TANPATAPI</font>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-bl">
-                        <div style="margin-top: 10px;margin-bottom: 25px;text-align: justify;">
-                            <font style="color:#414042 !important;">
+                <div class="col-lg-6">
+                    <div class="nk-portfolio-info">
+                        <div class="nk-portfolio-text">
+                            <div class="graph">
                                 <p>
-                                    Tumpeng dengan menu yang lengkap dan tersedia
-                                    dalam beragam ukuran. Setiap Tumpeng Tanpatapi
-                                    akan tersaji dengan Nasi Kuning yang pulen, Ayam
-                                    Goreng, Empal Suwir, Kering Tempe Kacang, Telur
-                                    Dadar Rawis, Perkedel Kentang, Urap, dan Mie
-                                    Goreng
+                                    Apapun acaramu, Tanpatapi Kitchen siap dan berkomitmen untuk
+                                    menyediakan sajian terbaik. Salah satunya adalah Tumpeng.
                                 </p>
-                            </font>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center fh5co-heading">
-                    <div style="margin: 10px;">
-                        <div style="padding: 10px;">
-                            <img src="assets/temp/tumpeng/tumpeng-mini.png" class="img-menu-s" alt="Menu 1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row animate-box" style="margin-bottom: 80px;">
-            <div class="signature" style="margin-bottom: 40px;justify-content:space-between">
-                <div class="col-md-4 fh5co-heading">
-                    <div class="d-bl-menu">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <font class="f-nama-menu">TUMPENG MINI</font>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-bl">
-                        <div style="margin-top: 10px;margin-bottom: 25px;text-align: justify;">
-                            <font style="color:#414042 !important;">
                                 <p>
-                                    Tanpatapi's Signature merupakan perpaduan masakan khas Nusantara
-                                    dan Mancanegara dengan bumbu khas melalui tangan ajaib Chef
-                                    Palitho.
-                                    Dengan ini, Tanpatapi Kitchen merangkum semua kuliner dari berbagai
-                                    negara dalam sebuah kotak. Tanpatapi Kitchen siap untuk memanjakan
-                                    lidah Anda melalui kotak yang kami sajikan.
+                                    Tradisi yang hadir sejak dulu yang memuliakan gunung sebagai tempat
+                                    bersemayam para hyang, atau arwah leluhur untuk selebrasi, baik
+                                    kegembiraan ataupun kesedihan.
                                 </p>
-                            </font>
-                        </div>
-                    </div>
-                    <div class="price-img">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <a href="#" class="btn btn-block btn-default"><i class="fa-solid fa-circle-chevron-right "></i> <?= hargaRupiah(45000); ?> </a>
+                                <p>
+                                    Tanpatapi Kitchen turut serta merayakan acara dan momen berharga Anda
+                                    melalui Tumpeng nikmat dan berkualitas.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 text-center fh5co-heading">
-                    <div style="margin: 10px;">
-                        <div style="padding: 10px;">
-                            <img src="assets/temp/tumpeng/tumpeng-mini.png" class="img-menu-s" alt="Menu 1">
+            </div>
+            <!-- end 1 -->
+            <div class="nk-gap-1 mt-14"></div>
+            <div class="row vertical-gap" id="samakan">
+                <div class="col-lg-12">
+                    <div class="nk-portfolio-info">
+                        <div class="nk-portfolio-text">
+                            <center>
+                                <img src="assets/temp/tumpeng/tumpeng.png" width="70%" alt="">
+                            </center>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="nk-gap-4 mt-14"></div>
+            <div class="row vertical-gap" id="samakan">
+                <div class="col-lg-4">
+                    <div>
+                        <div>
+                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;line-height: 35px;font-size: 33px;"><b>TUMPENG TANPATAPI</b></font>
+                        </div>
+                        <div class="graph" style="margin-top: 30px;margin-bottom: 30px;">
+                            <p>
+                                Tumpeng dengan menu yang lengkap dan tersedia
+                                dalam beragam ukuran. Setiap Tumpeng Tanpatapi
+                                akan tersaji dengan Nasi Kuning yang pulen, Ayam
+                                Goreng, Empal Suwir, Kering Tempe Kacang, Telur
+                                Dadar Rawis, Perkedel Kentang, Urap, dan Mie
+                                Goreng.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div style="display: flex;font-size: 25px;color: #255d8a;justify-content: space-between;">
+                        <div style="margin-left: 40px;">
+                            <div>
+                                <font style="color:transparent">0</font>5 Pax
+                            </div>
+                        </div>
+                        <div style="margin-left: 40px;">
+                            <div><b>Rp. 300.000</b></div>
+                        </div>
+                    </div>
+                    <div style="display: flex;font-size: 25px;color: #255d8a;justify-content: space-between;">
+                        <div style="margin-left: 40px;">
+                            <div>10 Pax</div>
+                        </div>
+                        <div style="margin-left: 40px;">
+                            <div><b>Rp. 500.000</b></div>
+                        </div>
+                    </div>
+                    <div style="display: flex;font-size: 25px;color: #255d8a;justify-content: space-between;">
+                        <div style="margin-left: 40px;">
+                            <div>20 Pax</div>
+                        </div>
+                        <div style="margin-left: 40px;">
+                            <div><b>Rp. 1000.000</b></div>
+                        </div>
+                    </div>
+                    <div style="display: flex;font-size: 25px;color: #255d8a;justify-content: space-between;">
+                        <div style="margin-left: 40px;">
+                            <div>30 Pax</div>
+                        </div>
+                        <div style="margin-left: 40px;">
+                            <div><b>Rp. 1.400.000</b></div>
+                        </div>
+                    </div>
+                    <div style="display: flex;font-size: 25px;color: #255d8a;justify-content: space-between;">
+                        <div style="margin-left: 40px;">
+                            <div>40 Pax</div>
+                        </div>
+                        <div style="margin-left: 40px;">
+                            <div><b>Rp. 1.700.000</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-gap-4 mt-14"></div>
+            <div class="row vertical-gap" id="samakan">
+                <div class="col-lg-4">
+                    <div>
+                        <div>
+                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;line-height: 35px;font-size: 33px;"><b>TUMPENG MINI</b></font>
+                        </div>
+                        <div class="graph" style="margin-top: 30px;margin-bottom: 30px;">
+                            <p>
+                                Sajian tepat untuk beragam acaramu. Tanpatapi
+                                Kitchen menyajikan tumpeng mini yang cocok
+                                disantap untuk porsi satu orang. Di setiap Tumpeng
+                                Mini, tersaji Nasi Kuning yang pulen, Ayam Goreng,
+                                Empal Suwir, Kering Tempe Kacang, Telur Dadar
+                                Rawis, Perkedel Kentang, Urap, dan Mie Goreng.
+                                Lengkap dan mengenyangkan.
+                            </p>
+                        </div>
+                        <div>
+                            <a class="btn btn-block btn-default-web">Rp. 45.000</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="nk-portfolio-info">
+                        <div class="nk-portfolio-text">
+                            <div>
+                                <img src="assets/temp/tumpeng/tumpeng-mini.png" class="img-khas" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nk-gap-4 mt-14"></div>
         </div>
     </div>
-    <?php
-    include "include/button-wa.php";
-    ?>
 </div>
 <?php
 include "include/footer.php";

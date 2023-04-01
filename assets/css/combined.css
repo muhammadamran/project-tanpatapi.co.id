@@ -5877,18 +5877,20 @@ h4 {
 .nk-navbar-full .nk-nav .dropdown > li > a,
 .nk-navbar-full .nk-nav > li:last-of-type > a,
 .nk-navbar-full .nk-nav > li > a {
-  font-family: Playfair Display, serif;
+  font-family: 'Work Sans', serif;
   font-size: 1.7rem;
   text-transform: none;
   font-weight: 700;
   padding: -1px 80px;
-  color: #d8d8d8;
+  color: #fff;
 }
 .nk-navbar-full .nk-nav .dropdown > li.active > a,
 .nk-navbar-full .nk-nav .dropdown > li > a:hover,
 .nk-navbar-full .nk-nav > li.active > a,
 .nk-navbar-full .nk-nav > li > a:hover {
-  color: #fff;
+  /* color: #fff; */
+  color: #276898;
+  font-family: 'Work Sans', serif;
 }
 .nk-navbar-full .nk-nav .dropdown > li > a:after,
 .nk-navbar-full .nk-nav .dropdown > li > a:before,
