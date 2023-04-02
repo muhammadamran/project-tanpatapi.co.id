@@ -7720,7 +7720,8 @@ a:hover > .nk-icon-search:after {
 }
 .nk-blog-isotope .nk-blog-post .nk-post-thumb {
   position: relative;
-  margin: -25px 0px -25px -30px;
+  /* margin: -25px 0px -25px -30px; */
+  margin: -25px -30px 21px;
 }
 .nk-blog-isotope .nk-blog-post .nk-post-thumb > a {
   transition: opacity 0.5s;

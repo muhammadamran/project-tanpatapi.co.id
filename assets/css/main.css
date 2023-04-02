@@ -119,6 +119,92 @@
     align-items: flex-start;
 }
 
+/* INDEX */
+#judul-menu {
+    font-family: Work Sans, sans-serif;
+    font-weight:900;
+    color: #255d8a;
+    line-height: 35px;
+    font-size: 33px;
+}
+
+#detail-menu {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Tumpeng */
+#dalam-dua {
+    display: flex;
+    font-size: 25px;
+    color: #255d8a;
+    justify-content: space-between;
+}
+
+#dalam-tiga {
+    margin-left: 40px;
+}
+
+#tumpeng-mini {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0px;
+}
+
+/* Snack Box */
+#savory {
+    font-family: Work Sans, sans-serif;
+    font-weight:900;
+    color: #255d8a;
+    font-size: 95px;
+}
+
+#sweet {
+    font-family: Work Sans, sans-serif;
+    font-weight:900;
+    color: #255d8a;
+    font-size: 95px;
+}
+
+/* Tentang Kami */
+#ola-oke {
+    margin: -80px 90px -55px 90px;
+    box-shadow: 6px 8px 2px rgb(249 157 27);
+    border-radius: 0px 50px 0px 50px;
+}
+
+/* Promo & Update */
+#judul-pu {
+    color:#fff;
+    font-family: Work Sans, sans-serif;
+}
+
+@media (min-width:991.5px) {
+    #promo-update-one {
+        display: show;
+    }
+    
+    #promo-update-two {
+        display: none;
+    }
+}
+
+@media (max-width:991.5px) {
+    #tumpeng-mini {
+        display: flex;
+        justify-content: center;
+        margin-top: 45px;
+    }
+
+    #promo-update-one {
+        display: none;
+    }
+    
+    #promo-update-two {
+        display: show;
+    }
+}
+
 .graph {
     font-family: 'Poppins';
     text-align: justify;
@@ -315,6 +401,7 @@
 
 /* END BTN WA */
 
+
 .hubungi-kami {
     font-family: Poppins, sans-serif;
     font-weight: 900;
@@ -326,6 +413,13 @@
     font-family: Poppins, sans-serif;
     font-weight: 500;
     color: #fff;
+    font-size: 16px;
+}
+
+.hubungi-kami-contact {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    color: #252525;
     font-size: 16px;
 }
 

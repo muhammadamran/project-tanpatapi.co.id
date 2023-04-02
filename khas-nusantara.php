@@ -48,9 +48,9 @@ include "include/navbar.php";
                 <div class="col-lg-4">
                     <div>
                         <div>
-                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;line-height: 35px;font-size: 33px;"><b>NASI BOGANA</b></font>
+                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>NASI BOGANA</b></font>
                         </div>
-                        <div class="graph" style="margin-top: 30px;margin-bottom: 30px;">
+                        <div class="graph" id="detail-menu">
                             <p>
                                 Hidangan yang berasal dari Tegal, Jawa Tengah ini
                                 terdiri dari nasi uduk nikmat, yang dibungkus daun,
@@ -76,106 +76,6 @@ include "include/navbar.php";
                     </div>
                 </div>
             </div>
-            <div class="nk-gap-4 mt-14"></div>
-            <div class="row vertical-gap" id="samakan">
-                <div class="col-lg-4">
-                    <div>
-                        <div>
-                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;line-height: 35px;font-size: 33px;"><b>NASI TIMBEL KOMPLIT</b></font>
-                        </div>
-                        <div class="graph" style="margin-top: 30px;margin-bottom: 30px;">
-                            <p>
-                                Hidangan sepinggah asal Bandung ini cocok untuk
-                                menemani aktivitas harianmu. Nasi putih yang
-                                dibungkus daun disajikan bersama Ayam Goreng,
-                                Empal Gepuk, Sayur Asem, Tahu Tempe Bacem, dan
-                                tak lupa Sambal Dadak khas Sunda.
-                            </p>
-                        </div>
-                        <div>
-                            <a class="btn btn-block btn-default-web">Rp. 45.000</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="nk-portfolio-info">
-                        <div class="nk-portfolio-text">
-                            <div>
-                                <div class="bingkai-khas">
-                                    <img src="<?= $menuSignature ?>khas2.jpg" class="img-khas" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="nk-gap-4 mt-14"></div>
-            <div class="row vertical-gap" id="samakan">
-                <div class="col-lg-4">
-                    <div>
-                        <div>
-                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;line-height: 35px;font-size: 33px;"><b>NASI LIWET</b></font>
-                        </div>
-                        <div class="graph" style="margin-top: 30px;margin-bottom: 30px;">
-                            <p>
-                                Satu lagi hidangan khas Sunda yang nggak boleh
-                                dilewatkan, yaitu Nasi Liwet ala Chef Palitho. Nasi
-                                Gurih yang disajikan bersama Teri Medan, Ayam
-                                Bakar Ciamis, Tempe Bacem, Tahu Isi, dan Sambal
-                                Tomat Merah. dan Kerupuk Gendar renyah.
-                            </p>
-                        </div>
-                        <div>
-                            <a class="btn btn-block btn-default-web">Rp. 45.000</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="nk-portfolio-info">
-                        <div class="nk-portfolio-text">
-                            <div>
-                                <div class="bingkai-khas">
-                                    <img src="<?= $menuSignature ?>khas3.jpg" class="img-khas" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="nk-gap-4 mt-14"></div>
-            <div class="row vertical-gap" id="samakan">
-                <div class="col-lg-4">
-                    <div>
-                        <div>
-                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;line-height: 35px;font-size: 33px;"><b>NASI AYAM BAKAR</b></font>
-                        </div>
-                        <div class="graph" style="margin-top: 30px;margin-bottom: 30px;">
-                            <p>
-                                Hidangan satu ini bisa jadi rekomendasi untuk
-                                santap siang ataupun malam-mu. Nasi putih hangat
-                                yang dihidangkan bersama Ayam Bakar gurih dan
-                                aromatik, Udang Balado, Oseng Tempe Buncis, dan
-                                Sambal sebagai pelengkapnya.
-                            </p>
-                        </div>
-                        <div>
-                            <a class="btn btn-block btn-default-web">Rp. 45.000</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="nk-portfolio-info">
-                        <div class="nk-portfolio-text">
-                            <div>
-                                <div class="bingkai-khas">
-                                    <img src="<?= $menuSignature ?>khas4.jpg" class="img-khas" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- with out images -->
             <div class="nk-gap-4 mt-14"></div>
             <div class="row vertical-gap" id="khas-kansama">
@@ -183,10 +83,10 @@ include "include/navbar.php";
                 <div class="col-lg-6">
                     <div>
                         <div>
-                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;line-height: 35px;font-size: 33px;"><b>NASI BALI</b></font>
+                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>NASI BALI</b></font>
                         </div>
-                        <div class="graph" style="margin-top: 30px;margin-bottom: 30px;">
-                            <p style="padding: 30px 150px 40px 0px;">
+                        <div class="graph" id="detail-menu">
+                            <p style="padding: 30px 0px 40px 0px;">
                                 Nggak perlu jauh-jauh ke Bali untuk
                                 menyantap hidangan satu ini. Di Tanpatapi,
                                 kamu bisa mencoba sepiring nasi putih hangat
@@ -204,10 +104,10 @@ include "include/navbar.php";
                 <div class="col-lg-6">
                     <div>
                         <div>
-                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;line-height: 35px;font-size: 33px;"><b>NASI TUNA BALADO</b></font>
+                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>NASI TUNA BALADO</b></font>
                         </div>
                         <div class="graph" style="margin-top: 30px;margin-bottom: 57px;">
-                            <p style="padding: 30px 150px 40px 0px;">
+                            <p style="padding: 30px 0px 40px 0px;">
                                 Satu lagi hidangan dari Tanpatapi Kitchen yang
                                 wajib dicoba, yaitu Nasi Tuna Balado. Nasi putih
                                 yang disajikan dengan Tuna Balado, Krengseng
@@ -226,10 +126,10 @@ include "include/navbar.php";
                 <div class="col-lg-6">
                     <div>
                         <div>
-                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;line-height: 35px;font-size: 33px;"><b>NASI AYAM RICA - RICA</b></font>
+                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>NASI AYAM RICA - RICA</b></font>
                         </div>
                         <div class="graph" style="margin-top: 30px;margin-bottom: 59px;">
-                            <p style="padding: 30px 150px 40px 0px;">
+                            <p style="padding: 30px 0px 40px 0px;">
                                 Pecinta pedas mari merapat. Nikmati kelezatan
                                 hidangan asal kota Manado yang terdiri dari
                                 Nasi Putih hangat, Ayam Rica-Rica yang pedas
@@ -246,10 +146,10 @@ include "include/navbar.php";
                 <div class="col-lg-6">
                     <div>
                         <div>
-                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;line-height: 35px;font-size: 33px;"><b>NASI AYAM KREMES</b></font>
+                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>NASI AYAM KREMES</b></font>
                         </div>
-                        <div class="graph" style="margin-top: 30px;margin-bottom: 30px;">
-                            <p style="padding: 30px 150px 40px 0px;">
+                        <div class="graph" id="detail-menu">
+                            <p style="padding: 30px 0px 40px 0px;">
                                 Salah satu hidangan favorit semua orang, bisa
                                 kamu temukan juga di Tanpatapi, yaitu Nasi
                                 Ayam Kremes. Nasi putih hangat dan pulen,
@@ -265,7 +165,6 @@ include "include/navbar.php";
                 </div>
             </div>
             <!-- end with out images -->
-
             <div class="nk-gap-4 mt-14"></div>
         </div>
     </div>

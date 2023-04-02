@@ -63,9 +63,9 @@ include "include/navbar.php";
                 <div class="col-lg-4">
                     <div>
                         <div>
-                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;line-height: 35px;font-size: 33px;"><b>TUMPENG TANPATAPI</b></font>
+                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>TUMPENG TANPATAPI</b></font>
                         </div>
-                        <div class="graph" style="margin-top: 30px;margin-bottom: 30px;">
+                        <div class="graph" id="detail-menu">
                             <p>
                                 Tumpeng dengan menu yang lengkap dan tersedia
                                 dalam beragam ukuran. Setiap Tumpeng Tanpatapi
@@ -78,45 +78,45 @@ include "include/navbar.php";
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div style="display: flex;font-size: 25px;color: #255d8a;justify-content: space-between;">
-                        <div style="margin-left: 40px;">
+                    <div id="dalam-dua">
+                        <div id="dalam-tiga">
                             <div>
                                 <font style="color:transparent">0</font>5 Pax
                             </div>
                         </div>
-                        <div style="margin-left: 40px;">
+                        <div id="dalam-tiga">
                             <div><b>Rp. 300.000</b></div>
                         </div>
                     </div>
-                    <div style="display: flex;font-size: 25px;color: #255d8a;justify-content: space-between;">
-                        <div style="margin-left: 40px;">
+                    <div id="dalam-dua">
+                        <div id="dalam-tiga">
                             <div>10 Pax</div>
                         </div>
-                        <div style="margin-left: 40px;">
+                        <div id="dalam-tiga">
                             <div><b>Rp. 500.000</b></div>
                         </div>
                     </div>
-                    <div style="display: flex;font-size: 25px;color: #255d8a;justify-content: space-between;">
-                        <div style="margin-left: 40px;">
+                    <div id="dalam-dua">
+                        <div id="dalam-tiga">
                             <div>20 Pax</div>
                         </div>
-                        <div style="margin-left: 40px;">
+                        <div id="dalam-tiga">
                             <div><b>Rp. 1000.000</b></div>
                         </div>
                     </div>
-                    <div style="display: flex;font-size: 25px;color: #255d8a;justify-content: space-between;">
-                        <div style="margin-left: 40px;">
+                    <div id="dalam-dua">
+                        <div id="dalam-tiga">
                             <div>30 Pax</div>
                         </div>
-                        <div style="margin-left: 40px;">
+                        <div id="dalam-tiga">
                             <div><b>Rp. 1.400.000</b></div>
                         </div>
                     </div>
-                    <div style="display: flex;font-size: 25px;color: #255d8a;justify-content: space-between;">
-                        <div style="margin-left: 40px;">
+                    <div id="dalam-dua">
+                        <div id="dalam-tiga">
                             <div>40 Pax</div>
                         </div>
-                        <div style="margin-left: 40px;">
+                        <div id="dalam-tiga">
                             <div><b>Rp. 1.700.000</b></div>
                         </div>
                     </div>
@@ -127,9 +127,9 @@ include "include/navbar.php";
                 <div class="col-lg-4">
                     <div>
                         <div>
-                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;line-height: 35px;font-size: 33px;"><b>TUMPENG MINI</b></font>
+                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>TUMPENG MINI</b></font>
                         </div>
-                        <div class="graph" style="margin-top: 30px;margin-bottom: 30px;">
+                        <div class="graph" id="detail-menu">
                             <p>
                                 Sajian tepat untuk beragam acaramu. Tanpatapi
                                 Kitchen menyajikan tumpeng mini yang cocok
@@ -146,7 +146,7 @@ include "include/navbar.php";
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="nk-portfolio-info">
+                    <div class="nk-portfolio-info" id="tumpeng-mini">
                         <div class="nk-portfolio-text">
                             <div>
                                 <img src="assets/temp/tumpeng/tumpeng-mini.png" class="img-khas" alt="">

@@ -54,7 +54,7 @@ include "include/navbar.php";
                 <div class="col-lg-12">
                     <div class="nk-portfolio-info">
                         <div class="nk-portfolio-text">
-                            <div style="margin: -80px 90px -55px 90px;">
+                            <div id="ola-oke">
                                 <div class="bingkai-tt">
                                     <div style="line-height: 30px;margin: -30px 250px -10px 250px;background: #fff9ed;">
                                         <font class="nk-portfolio-title display-4" id="aya"><b>Tanpatapi!</b></font>

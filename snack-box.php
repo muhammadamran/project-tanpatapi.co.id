@@ -68,7 +68,7 @@ include "include/navbar.php";
                                 <tr>
                                     <td style="text-align: center;" colspan="2">
                                         <center>
-                                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;font-size: 95px;"><b>Sweet</b></font>
+                                            <font class="nk-portfolio-title display-4" id="sweet"><b>Sweet</b></font>
                                         </center>
                                     </td>
                                 </tr>
@@ -172,7 +172,7 @@ include "include/navbar.php";
                                 <tr>
                                     <td style="text-align: center;" colspan="2">
                                         <center>
-                                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;font-size: 95px;"><b>Savory</b></font>
+                                            <font class="nk-portfolio-title display-4" id="savory"><b>Savory</b></font>
                                         </center>
                                     </td>
                                 </tr>

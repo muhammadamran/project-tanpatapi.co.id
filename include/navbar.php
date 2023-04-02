@@ -5,7 +5,7 @@
             <div class="nk-nav-table">
                 <div class="nav-tanpatapi">
                     <div class="nav-tanpatapi-one">
-                        <a href="index.html" class="nk-nav-logo">
+                        <a href="index.php" class="nk-nav-logo">
                             <img src="<?= $navbarL; ?>" alt="" width="150" class="nk-nav-logo-onscroll">
                             <img src="<?= $navbarL; ?>" alt="" width="150">
                         </a>
@@ -48,7 +48,7 @@
             <div class="container">
                 <div class="nk-nav-header">
                     <div class="nk-nav-logo">
-                        <a href="index.html" class="nk-nav-logo">
+                        <a href="index.php" class="nk-nav-logo">
                             <img src="<?= $navbarL; ?>" alt="" width="85">
                         </a>
                     </div>

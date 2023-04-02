@@ -49,9 +49,9 @@ include "include/navbar.php";
                 <div class="col-lg-4">
                     <div>
                         <div>
-                            <font class="nk-portfolio-title display-4" style="font-family: Work Sans, sans-serif;font-weight:900;color: #255d8a;line-height: 35px;font-size: 33px;"><b>NASI AYAM TANGKAP</b></font>
+                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>NASI AYAM TANGKAP</b></font>
                         </div>
-                        <div class="graph" style="margin-top: 30px;margin-bottom: 30px;">
+                        <div class="graph" id="detail-menu">
                             <p>
                                 Hidangan otentik dari Aceh yang diracik dengan
                                 bumbu rahasia Chef Palitho, lengkap dengan Telur
