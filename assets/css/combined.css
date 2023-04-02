@@ -7714,12 +7714,13 @@ a:hover > .nk-icon-search:after {
 }
 .nk-blog-isotope .nk-blog-post {
   padding: 25px 30px;
-  background-color: #fff;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.03);
+    background-color: #255d8a;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.03);
+    color: #fff;
 }
 .nk-blog-isotope .nk-blog-post .nk-post-thumb {
   position: relative;
-  margin: -25px -30px 21px;
+  margin: -25px 0px -25px -30px;
 }
 .nk-blog-isotope .nk-blog-post .nk-post-thumb > a {
   transition: opacity 0.5s;

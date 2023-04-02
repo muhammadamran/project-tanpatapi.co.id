@@ -14,11 +14,11 @@ include "include/navbar.php";
             <!-- start 1 -->
             <div class="row vertical-gap" id="samakan">
                 <div class="col-lg-4">
-                    <div>
-                        <div>
-                            <font class="nk-portfolio-title display-4" style="font-family: system-ui, sans-serif;font-weight:900;color: #255d8a;"><b>Tanpatapi’s</b></font>
+                    <div style="display: grid;">
+                        <div style="line-height: 30px;">
+                            <font class="nk-portfolio-title display-4" id="aya"><b>Tanpatapi’s</b></font>
                         </div>
-                        <div style="margin-top: -30px;">
+                        <div style="margin-top: -20px;">
                             <font class="nk-portfolio-title display-4" id="gaya">Tumpeng</font>
                         </div>
                     </div>

@@ -23,6 +23,20 @@
     src: url('../fonts/High Spirited.ttf');
 }
 
+#ayaBesar {
+    font-family: Work Sans, sans-serif, sans-serif;
+    font-weight:900;
+    color: #255d8a;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+#aya {
+    font-family: Work Sans, sans-serif, sans-serif;
+    font-weight:900;
+    color: #255d8a;
+}
+
 #gaya {
     font-family: High;
     font-weight: 800;
@@ -115,6 +129,17 @@
     color: #303030;
 }
 
+.graph-tt  {
+    font-family: 'Poppins';
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #255d8a;
+    padding: 30px;
+}
+
 .solid {
     margin-top: 165px;
     border-left: 5px #f99d1b solid;
@@ -174,6 +199,16 @@
     color: #fff !important;
     border-radius: 50px;
     font-family: system-ui;
+}
+
+.bingkai-tt {
+    background: transparent;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0px;
+    border-style: solid;
+    border-color: #255d8a;
+    border-radius: 0px 50px 0px 50px;
 }
 
 .bingkai-signature {
@@ -352,6 +387,10 @@
     }
 
     .bingkai-signature {
+        margin-top: 25px;
+    }
+
+    .bingkai-tt {
         margin-top: 25px;
     }
 
