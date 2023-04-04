@@ -42,6 +42,11 @@
 
         gtag('config', 'G-VG2YZSR639');
     </script>
+    <!-- Alert -->
+    <script src="assets/sweet/sweetalert2.all.js"></script>
+    <script src="assets/sweet/sweetalert2.all.min.js"></script>
+    <script src="assets/sweet/sweetalert2.js"></script>
+    <script src="assets/sweet/sweetalert2.min.js"></script>
 </head>
 
 <body id="bg-body">

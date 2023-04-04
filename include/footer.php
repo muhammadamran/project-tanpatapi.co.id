@@ -116,6 +116,18 @@
     $(document).ready(function() {
         $(".preloader").fadeOut();
     });
+
+    var x = document.getElementById("mylocation");
+
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude;
+    }
 </script>
 </body>
 
