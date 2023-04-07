@@ -40,7 +40,7 @@ include "include/navbar.php";
             <!-- end 1 -->
             <!-- start 2 -->
             <?php
-            $dataTable = $db->query("SELECT * FROM tb_signature_menu ORDER BY id DESC");
+            $dataTable = $db->query("SELECT * FROM tb_signature_menu ORDER BY rorder ASC");
             if (mysqli_num_rows($dataTable) > 0) {
                 $no = 0;
                 while ($row = mysqli_fetch_array($dataTable)) {
