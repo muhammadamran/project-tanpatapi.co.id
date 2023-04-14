@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="<?= $seodesc; ?>" content="<?= $seodesc; ?>">
     <meta name="<?= $seodesc; ?>" content="<?= $seodesc; ?>">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= $ICON_W; ?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= $ICON_W; ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= $ICON_W; ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= $URLCMS ?>/assets/apps/icon/<?= $Agakicon ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= $URLCMS ?>/assets/apps/icon/<?= $Agakicon ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= $URLCMS ?>/assets/apps/icon/<?= $Agakicon ?>">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
@@ -52,7 +52,7 @@
 <body id="bg-body">
     <div class="preloader">
         <div class="loading">
-            <img src="assets/temp/logo/logo-black.png" width="150">
+            <img src="<?= $URLCMS ?>/assets/apps/loader/<?= $loader ?>" width="150">
             <br>
             <div class="loading-divider"></div>
             <font class="text-loading-wait">Please wait ...</font>

@@ -5,9 +5,12 @@ include "include/assets.php";
 // END
 include "include/head.php";
 include "include/navbar.php";
+
+$Qus = $db->query("SELECT * FROM tb_about WHERE status='1'");
+$Rus = mysqli_fetch_array($Qus);
 ?>
 <title>Tentang Kami | Official Website</title>
-<div class="nk-main" style="background-image: url('<?= $background1; ?>');background-repeat: no-repeat;background-size: cover;z-index: 1;" id="hg">
+<div class="nk-main" style="background-image: url('<?= $URLCMS ?>assets/apps/bg-page/<?= $bg_page ?>');background-repeat: no-repeat;background-size: cover;z-index: 1;" id="hg">
     <div class="container">
         <div class="nk-portfolio-single">
             <div class="nk-gap-3 mb-14"></div>
@@ -16,7 +19,7 @@ include "include/navbar.php";
                 <div class="col-lg-12" style="display: grid;justify-content: center;">
                     <div>
                         <div style="line-height: 30px;">
-                            <font class="nk-portfolio-title display-4" id="ayaBesar"><b>Tentang Kami</b></font>
+                            <font class="nk-portfolio-title display-4" id="ayaBesar"><b><?= $Rus['title'] ?></b></font>
                         </div>
                     </div>
                 </div>
@@ -30,7 +33,7 @@ include "include/navbar.php";
                         <div class="nk-portfolio-text">
                             <div style="margin: -80px 90px -55px 90px;">
                                 <div class="bingkai-signature">
-                                    <img src="assets/temp/tentangkami/tentangkami.jpg" class="img-kudapan" alt="">
+                                    <img src="<?= $URLCMS ?>/assets/about/<?= $Rus['pictures'] ?>" class="img-kudapan" alt="">
                                 </div>
                             </div>
                         </div>
@@ -44,7 +47,7 @@ include "include/navbar.php";
                 <div class="col-lg-12" style="display: grid;justify-content: center;">
                     <div>
                         <div style="line-height: 30px;">
-                            <font class="nk-portfolio-title display-4" id="gaya" style="font-size: 60px !important;">Cita rasa terbaik untukmu,</font>
+                            <font class="nk-portfolio-title display-4" id="gaya" style="font-size: 60px !important;"><?= $Rus['slogan'] ?></font>
                         </div>
                     </div>
                 </div>
@@ -57,22 +60,11 @@ include "include/navbar.php";
                             <div id="ola-oke">
                                 <div class="bingkai-tt">
                                     <div style="line-height: 30px;margin: -30px 250px -10px 250px;background: #fff9ed;">
-                                        <font class="nk-portfolio-title display-4" id="aya"><b>Tanpatapi!</b></font>
+                                        <font class="nk-portfolio-title display-4" id="aya"><b><?= $Rus['boxtitle'] ?></b></font>
                                     </div>
                                     <div>
                                         <div class="graph-tt">
-                                            <p>
-                                                Berawal dari mimpi Chef Palitho untuk menyajikan
-                                                hidangan lezat, dengan bahan-bahan berkualitas
-                                                yang dapat menggugah cita rasa siapapun yang
-                                                menyantapnya.
-                                                Lalu, terciptalah Tanpatapi Kitchen. Sebuah inovasi
-                                                dari Chef Palitho kepada masyarakat Indonesia yang
-                                                merindukan hidangan berkualitas tinggi serta dapat
-                                                disantap kapanpun dan dimanapun.
-                                                Mari ikuti perjalanan Chef Palitho untuk menciptakan
-                                                masakan lezat khas Nusantara yang memiliki makna
-                                                tersendiri untuk menciptakan keharmonisan cita rasa.</p>
+                                            <?= $Rus['description'] ?>
                                         </div>
                                     </div>
                                 </div>

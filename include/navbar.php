@@ -1,13 +1,13 @@
 <?php $uriSegments = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)); ?>
 <header class="nk-header nk-header-opaque">
-    <nav class="nk-navbar nk-navbar-top" style="background-image: url('<?= $navbar; ?>');background-repeat: no-repeat;background-size: cover;">
+    <nav class="nk-navbar nk-navbar-top" style="background-image: url('<?= $URLCMS ?>assets/apps/bg-header/<?= $bg_header ?>');background-repeat: no-repeat;background-size: cover;">
         <div class="container">
             <div class="nk-nav-table">
                 <div class="nav-tanpatapi">
                     <div class="nav-tanpatapi-one">
                         <a href="index.php" class="nk-nav-logo">
-                            <img src="<?= $navbarL; ?>" alt="" width="150" class="nk-nav-logo-onscroll">
-                            <img src="<?= $navbarL; ?>" alt="" width="150">
+                            <img src="<?= $URLCMS ?>assets/apps/logo/<?= $Agaklogo ?>" alt="" width="150" class="nk-nav-logo-onscroll">
+                            <img src="<?= $URLCMS ?>assets/apps/logo/<?= $Agaklogo ?>" alt="" width="150">
                         </a>
                     </div>
                     <div class="nav-tanpatapi-two">
@@ -49,7 +49,7 @@
                 <div class="nk-nav-header">
                     <div class="nk-nav-logo">
                         <a href="index.php" class="nk-nav-logo">
-                            <img src="<?= $navbarL; ?>" alt="" width="85">
+                            <img src="<?= $URLCMS ?>assets/apps/logo/<?= $Agaklogo ?>" alt="" width="85">
                         </a>
                     </div>
 

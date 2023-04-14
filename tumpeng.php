@@ -7,19 +7,23 @@ include "include/head.php";
 include "include/navbar.php";
 ?>
 <title>Tumpeng | Official Website</title>
-<div class="nk-main" style="background-image: url('<?= $background1; ?>');background-repeat: no-repeat;background-size: cover;z-index: 1;" id="hg">
+<div class="nk-main" style="background-image: url('<?= $URLCMS ?>assets/apps/bg-page/<?= $bg_page ?>');background-repeat: no-repeat;background-size: cover;z-index: 1;" id="hg">
     <div class="container">
         <div class="nk-portfolio-single">
             <div class="nk-gap-3 mb-14"></div>
             <!-- start 1 -->
+            <?php
+            $QDataSignature = $db->query("SELECT * FROM tb_tumpeng WHERE status='1'");
+            $RDataSignature = mysqli_fetch_array($QDataSignature);
+            ?>
             <div class="row vertical-gap" id="samakan">
                 <div class="col-lg-4">
                     <div style="display: grid;">
                         <div style="line-height: 30px;">
-                            <font class="nk-portfolio-title display-4" id="aya"><b>Tanpatapi’s</b></font>
+                            <font class="nk-portfolio-title display-4" id="aya"><b><?= $RDataSignature['title']; ?></b></font>
                         </div>
                         <div style="margin-top: -20px;">
-                            <font class="nk-portfolio-title display-4" id="gaya">Tumpeng</font>
+                            <font class="nk-portfolio-title display-4" id="gaya"><?= $RDataSignature['subtitle']; ?></font>
                         </div>
                     </div>
                 </div>
@@ -27,19 +31,7 @@ include "include/navbar.php";
                     <div class="nk-portfolio-info">
                         <div class="nk-portfolio-text">
                             <div class="graph">
-                                <p>
-                                    Apapun acaramu, Tanpatapi Kitchen siap dan berkomitmen untuk
-                                    menyediakan sajian terbaik. Salah satunya adalah Tumpeng.
-                                </p>
-                                <p>
-                                    Tradisi yang hadir sejak dulu yang memuliakan gunung sebagai tempat
-                                    bersemayam para hyang, atau arwah leluhur untuk selebrasi, baik
-                                    kegembiraan ataupun kesedihan.
-                                </p>
-                                <p>
-                                    Tanpatapi Kitchen turut serta merayakan acara dan momen berharga Anda
-                                    melalui Tumpeng nikmat dan berkualitas.
-                                </p>
+                                <?= $RDataSignature['description']; ?>
                             </div>
                         </div>
                     </div>
@@ -52,7 +44,7 @@ include "include/navbar.php";
                     <div class="nk-portfolio-info">
                         <div class="nk-portfolio-text">
                             <center>
-                                <img src="assets/temp/tumpeng/tumpeng.png" width="70%" alt="">
+                                <img src="<?= $URLCMS ?>assets/menu/tumpeng/<?= $RDataSignature['pictures']; ?>" width="70%" alt="">
                             </center>
                         </div>
                     </div>

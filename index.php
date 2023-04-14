@@ -7,7 +7,7 @@ include "include/head.php";
 include "include/navbar.php";
 ?>
 <title>Tanpatapi Signature | Official Website</title>
-<div class="nk-main" style="background-image: url('<?= $background1; ?>');background-repeat: no-repeat;background-size: cover;z-index: 1;" id="hg">
+<div class="nk-main" style="background-image: url('<?= $URLCMS ?>assets/apps/bg-page/<?= $bg_page ?>');background-repeat: no-repeat;background-size: cover;z-index: 1;" id="hg">
     <div class="container">
         <div class="nk-portfolio-single">
             <div class="nk-gap-3 mb-14"></div>
@@ -66,7 +66,7 @@ include "include/navbar.php";
                                 <div class="nk-portfolio-text">
                                     <div>
                                         <div class="bingkai-signature">
-                                            <img src="<?= $menuSignature ?>menu1.jpg" class="img-siganture" alt="">
+                                            <img src="<?= $URLCMS ?>assets/menu/signature/<?= $row['pictures']; ?>" class="img-siganture" alt="">
                                         </div>
                                     </div>
                                 </div>

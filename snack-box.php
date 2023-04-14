@@ -5,9 +5,11 @@ include "include/assets.php";
 // END
 include "include/head.php";
 include "include/navbar.php";
+$Qus = $db->query("SELECT * FROM tb_snackbox WHERE status='1'");
+$Rus = mysqli_fetch_array($Qus);
 ?>
 <title>Ragam Kudapan | Official Website</title>
-<div class="nk-main" style="background-image: url('<?= $background1; ?>');background-repeat: no-repeat;background-size: cover;z-index: 1;" id="hg">
+<div class="nk-main" style="background-image: url('<?= $URLCMS ?>assets/apps/bg-page/<?= $bg_page ?>');background-repeat: no-repeat;background-size: cover;z-index: 1;" id="hg">
     <div class="container">
         <div class="nk-portfolio-single">
             <div class="nk-gap-3 mb-14"></div>
@@ -16,10 +18,10 @@ include "include/navbar.php";
                 <div class="col-lg-4">
                     <div style="display: grid;">
                         <div style="line-height: 30px;">
-                            <font class="nk-portfolio-title display-4" id="aya"><b>Ragam Kudapan</b></font>
+                            <font class="nk-portfolio-title display-4" id="aya"><b><?= $Rus['title']; ?></b></font>
                         </div>
                         <div style="margin-top: -20px;">
-                            <font class="nk-portfolio-title display-4" id="gaya">Nusantara</font>
+                            <font class="nk-portfolio-title display-4" id="gaya"><?= $Rus['subtitle']; ?></font>
                         </div>
                     </div>
                 </div>
@@ -27,14 +29,7 @@ include "include/navbar.php";
                     <div class="nk-portfolio-info">
                         <div class="nk-portfolio-text">
                             <div class="graph">
-                                <p>
-                                    Buat acara Anda semakin berkualitas dengan sajian kudapan spesial dari
-                                    Tanpatapi Kitchen.
-                                </p>
-                                <p>
-                                    Ragam kudapan Nusantara tersedia dalam satu kotak yang akan membuat
-                                    setiap momen berharga Anda lebih manis, berkesan, dan menyenangkan.
-                                </p>
+                                <?= $Rus['description']; ?>
                             </div>
                         </div>
                     </div>
@@ -49,7 +44,7 @@ include "include/navbar.php";
                         <div class="nk-portfolio-text">
                             <div style="margin: -80px 90px -55px 90px;">
                                 <div class="bingkai-signature">
-                                    <img src="assets/temp/signature/kudapan.jpg" class="img-kudapan" alt="">
+                                    <img src="<?= $URLCMS ?>assets/menu/snackbox/<?= $Rus['pictures']; ?>" class="img-kudapan" alt="">
                                 </div>
                             </div>
                         </div>
