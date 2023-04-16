@@ -13,7 +13,7 @@ include "include/navbar.php";
             <div class="nk-gap-3 mb-14"></div>
             <!-- start 1 -->
             <?php
-            $QDataSignature = $db->query("SELECT * FROM tb_tumpeng WHERE status='1'");
+            $QDataSignature = $db->query("SELECT * FROM tb_tumpeng WHERE type IS NULL AND status='1'");
             $RDataSignature = mysqli_fetch_array($QDataSignature);
             ?>
             <div class="row vertical-gap" id="samakan">
@@ -52,102 +52,78 @@ include "include/navbar.php";
             </div>
             <div class="nk-gap-4 mt-14"></div>
             <div class="row vertical-gap" id="samakan">
+                <?php
+                $QDataSignature1 = $db->query("SELECT * FROM tb_tumpeng WHERE type='1' AND status='1'");
+                $RDataSignature1 = mysqli_fetch_array($QDataSignature1);
+                ?>
                 <div class="col-lg-4">
                     <div>
                         <div>
-                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>TUMPENG TANPATAPI</b></font>
+                            <font class="nk-portfolio-title display-4" id="judul-menu"><b><?= $RDataSignature1['title']; ?></b></font>
                         </div>
                         <div class="graph" id="detail-menu">
-                            <p>
-                                Tumpeng dengan menu yang lengkap dan tersedia
-                                dalam beragam ukuran. Setiap Tumpeng Tanpatapi
-                                akan tersaji dengan Nasi Kuning yang pulen, Ayam
-                                Goreng, Empal Suwir, Kering Tempe Kacang, Telur
-                                Dadar Rawis, Perkedel Kentang, Urap, dan Mie
-                                Goreng.
-                            </p>
+                            <?= $RDataSignature1['description']; ?>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div id="dalam-dua">
-                        <div id="dalam-tiga">
-                            <div>
-                                <font style="color:transparent">0</font>5 Pax
+                    <?php
+                    $dataTable = $db->query("SELECT * FROM tb_tumpeng_list ORDER BY id ASC");
+                    if (mysqli_num_rows($dataTable) > 0) {
+                        $no = 0;
+                        while ($row = mysqli_fetch_array($dataTable)) {
+                            $no++;
+                    ?>
+                            <div id="dalam-dua">
+                                <div id="dalam-tiga">
+                                    <div>
+                                        <?= $row['pax']; ?> Pax
+                                    </div>
+                                </div>
+                                <div id="dalam-tiga">
+                                    <div><b><?= hargaRupiah($row['prices']); ?></b></div>
+                                </div>
                             </div>
-                        </div>
-                        <div id="dalam-tiga">
-                            <div><b>Rp. 300.000</b></div>
-                        </div>
-                    </div>
-                    <div id="dalam-dua">
-                        <div id="dalam-tiga">
-                            <div>10 Pax</div>
-                        </div>
-                        <div id="dalam-tiga">
-                            <div><b>Rp. 500.000</b></div>
-                        </div>
-                    </div>
-                    <div id="dalam-dua">
-                        <div id="dalam-tiga">
-                            <div>20 Pax</div>
-                        </div>
-                        <div id="dalam-tiga">
-                            <div><b>Rp. 1000.000</b></div>
-                        </div>
-                    </div>
-                    <div id="dalam-dua">
-                        <div id="dalam-tiga">
-                            <div>30 Pax</div>
-                        </div>
-                        <div id="dalam-tiga">
-                            <div><b>Rp. 1.400.000</b></div>
-                        </div>
-                    </div>
-                    <div id="dalam-dua">
-                        <div id="dalam-tiga">
-                            <div>40 Pax</div>
-                        </div>
-                        <div id="dalam-tiga">
-                            <div><b>Rp. 1.700.000</b></div>
-                        </div>
-                    </div>
+                        <?php } ?>
+                    <?php } else { ?>
+                    <?php } ?>
                 </div>
             </div>
-            <div class="nk-gap-4 mt-14"></div>
-            <div class="row vertical-gap" id="samakan">
-                <div class="col-lg-4">
-                    <div>
-                        <div>
-                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>TUMPENG MINI</b></font>
-                        </div>
-                        <div class="graph" id="detail-menu">
-                            <p>
-                                Sajian tepat untuk beragam acaramu. Tanpatapi
-                                Kitchen menyajikan tumpeng mini yang cocok
-                                disantap untuk porsi satu orang. Di setiap Tumpeng
-                                Mini, tersaji Nasi Kuning yang pulen, Ayam Goreng,
-                                Empal Suwir, Kering Tempe Kacang, Telur Dadar
-                                Rawis, Perkedel Kentang, Urap, dan Mie Goreng.
-                                Lengkap dan mengenyangkan.
-                            </p>
-                        </div>
-                        <div>
-                            <a class="btn btn-block btn-default-web">Rp. 45.000</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="nk-portfolio-info" id="tumpeng-mini">
-                        <div class="nk-portfolio-text">
+            <?php
+            $dataTableT = $db->query("SELECT * FROM tb_tumpeng_menu ORDER BY rorder ASC");
+            if (mysqli_num_rows($dataTableT) > 0) {
+                $no = 0;
+                while ($rowT = mysqli_fetch_array($dataTableT)) {
+                    $no++;
+            ?>
+                    <div class="nk-gap-4 mt-14"></div>
+                    <div class="row vertical-gap" id="samakan">
+                        <div class="col-lg-4">
                             <div>
-                                <img src="assets/temp/tumpeng/tumpeng-mini.png" class="img-khas" alt="">
+                                <div>
+                                    <font class="nk-portfolio-title display-4" id="judul-menu"><b><?= $rowT['title']; ?></b></font>
+                                </div>
+                                <div class="graph" id="detail-menu">
+                                    <?= $rowT['description']; ?>
+                                </div>
+                                <div>
+                                    <a class="btn btn-block btn-default-web"><?= hargaRupiah($rowT['prices']); ?></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="nk-portfolio-info" id="tumpeng-mini">
+                                <div class="nk-portfolio-text">
+                                    <div>
+                                        <img src="<?= $URLCMS ?>assets/menu/tumpeng/<?= $rowT['prictures']; ?>" class="img-khas" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
+                <?php } ?>
+            <?php } else { ?>
+            <?php } ?>
             <div class="nk-gap-4 mt-14"></div>
         </div>
     </div>

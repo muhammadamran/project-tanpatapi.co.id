@@ -40,7 +40,7 @@ include "include/navbar.php";
             <!-- end 1 -->
             <!-- start 2 -->
             <?php
-            $dataTable = $db->query("SELECT * FROM tb_khas_menu ORDER BY rorder ASC");
+            $dataTable = $db->query("SELECT * FROM tb_khas_menu WHERE type='1' ORDER BY rorder ASC");
             if (mysqli_num_rows($dataTable) > 0) {
                 $no = 0;
                 while ($row = mysqli_fetch_array($dataTable)) {
@@ -79,88 +79,87 @@ include "include/navbar.php";
             <!-- end 2 -->
             <!-- with out images -->
             <div class="nk-gap-4 mt-14"></div>
-            <div class="row vertical-gap" id="khas-kansama">
+            <div class="row vertical-gap" id="khas-kansama" style="align-items: end !important;">
                 <div class="nk-gap-1 mt-14"></div>
+                <?php
+                $QKhas1 = $db->query("SELECT * FROM tb_khas_menu WHERE type='2' AND id='1'");
+                $RKhas1 = mysqli_fetch_array($QKhas1);
+                ?>
                 <div class="col-lg-6">
                     <div>
                         <div>
-                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>NASI BALI</b></font>
+                            <font class="nk-portfolio-title display-4" id="judul-menu"><b><?= $RKhas1['title']; ?></b></font>
                         </div>
                         <div class="graph" id="detail-menu">
-                            <p style="padding: 30px 0px 40px 0px;">
-                                Nggak perlu jauh-jauh ke Bali untuk
-                                menyantap hidangan satu ini. Di Tanpatapi,
-                                kamu bisa mencoba sepiring nasi putih hangat
-                                dengan Ayam Suwir, Sate Daging, Urapan, Telur
-                                pindang, dan tahu berontak. Dijamin bikin
-                                ketagihan!
+                            <p style="padding: 0px 0px 0px 0px;">
+                                <?= $RKhas1['description']; ?>
                             </p>
                         </div>
                         <div>
-                            <a class="btn btn-block btn-default-web">Rp. 45.000</a>
+                            <a class="btn btn-block btn-default-web"><?= hargaRupiah($RKhas1['prices']); ?></a>
                         </div>
                     </div>
                 </div>
                 <div class="nk-gap-1 mt-14"></div>
+                <?php
+                $QKhas2 = $db->query("SELECT * FROM tb_khas_menu WHERE type='2' AND id='2'");
+                $RKhas2 = mysqli_fetch_array($QKhas2);
+                ?>
                 <div class="col-lg-6">
                     <div>
                         <div>
-                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>NASI TUNA BALADO</b></font>
+                            <font class="nk-portfolio-title display-4" id="judul-menu"><b><?= $RKhas2['title']; ?></b></font>
                         </div>
-                        <div class="graph" style="margin-top: 30px;margin-bottom: 57px;">
-                            <p style="padding: 30px 0px 40px 0px;">
-                                Satu lagi hidangan dari Tanpatapi Kitchen yang
-                                wajib dicoba, yaitu Nasi Tuna Balado. Nasi putih
-                                yang disajikan dengan Tuna Balado, Krengseng
-                                Jagung, dan Mie Goreng.
+                        <div class="graph" id="detail-menu">
+                            <p style="padding: 0px 0px 0px 0px;">
+                                <?= $RKhas2['description']; ?>
                             </p>
                         </div>
                         <div>
-                            <a class="btn btn-block btn-default-web">Rp. 45.000</a>
+                            <a class="btn btn-block btn-default-web"><?= hargaRupiah($RKhas2['prices']); ?></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="oke-bagi"></div>
-            <div class="row vertical-gap" id="khas-kansama">
+            <div class="row vertical-gap" id="khas-kansama" style="align-items: end !important;">
                 <div class="nk-gap-1 mt-14"></div>
+                <?php
+                $QKhas3 = $db->query("SELECT * FROM tb_khas_menu WHERE type='2' AND id='3'");
+                $RKhas3 = mysqli_fetch_array($QKhas3);
+                ?>
                 <div class="col-lg-6">
                     <div>
                         <div>
-                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>NASI AYAM RICA - RICA</b></font>
+                            <font class="nk-portfolio-title display-4" id="judul-menu"><b><?= $RKhas3['title']; ?></b></font>
                         </div>
-                        <div class="graph" style="margin-top: 30px;margin-bottom: 59px;">
-                            <p style="padding: 30px 0px 40px 0px;">
-                                Pecinta pedas mari merapat. Nikmati kelezatan
-                                hidangan asal kota Manado yang terdiri dari
-                                Nasi Putih hangat, Ayam Rica-Rica yang pedas
-                                dan gurih, Cah Sawi Putih, dan , Bakwan Jagung
-                                renyah.
+                        <div class="graph" id="detail-menu">
+                            <p style="padding: 0px 0px 0px 0px;">
+                                <?= $RKhas3['description']; ?>
                             </p>
                         </div>
                         <div>
-                            <a class="btn btn-block btn-default-web">Rp. 45.000</a>
+                            <a class="btn btn-block btn-default-web"><?= hargaRupiah($RKhas3['prices']); ?></a>
                         </div>
                     </div>
                 </div>
                 <div class="nk-gap-1 mt-14"></div>
+                <?php
+                $QKhas4 = $db->query("SELECT * FROM tb_khas_menu WHERE type='2' AND id='4'");
+                $RKhas4 = mysqli_fetch_array($QKhas4);
+                ?>
                 <div class="col-lg-6">
                     <div>
                         <div>
-                            <font class="nk-portfolio-title display-4" id="judul-menu"><b>NASI AYAM KREMES</b></font>
+                            <font class="nk-portfolio-title display-4" id="judul-menu"><b><?= $RKhas4['title']; ?></b></font>
                         </div>
                         <div class="graph" id="detail-menu">
-                            <p style="padding: 30px 0px 40px 0px;">
-                                Salah satu hidangan favorit semua orang, bisa
-                                kamu temukan juga di Tanpatapi, yaitu Nasi
-                                Ayam Kremes. Nasi putih hangat dan pulen,
-                                berpadu dengan Ayam Goreng Kremes yang
-                                nikmat dan penuh rempah, Capcay, Tempe
-                                Bacem, dan Sambal.
+                            <p style="padding: 0px 0px 0px 0px;">
+                                <?= $RKhas4['description']; ?>
                             </p>
                         </div>
                         <div>
-                            <a class="btn btn-block btn-default-web">Rp. 45.000</a>
+                            <a class="btn btn-block btn-default-web"><?= hargaRupiah($RKhas4['prices']); ?></a>
                         </div>
                     </div>
                 </div>

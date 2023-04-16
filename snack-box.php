@@ -67,90 +67,20 @@ $Rus = mysqli_fetch_array($Qus);
                                         </center>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>Blueberry Roll Tart</td>
-                                    <td>8</td>
-                                </tr>
-                                <tr>
-                                    <td>Charcoal Mini Bread</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>Pandan Roll Tart</td>
-                                    <td>8</td>
-                                </tr>
-                                <tr>
-                                    <td>Strawberry Roll Tart</td>
-                                    <td>8</td>
-                                </tr>
-                                <tr>
-                                    <td>Bolu Kukus</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>Cake Tape</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>Cheese Pandan</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>Chiffon Pandan</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>Eclair</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Fruit Pudding</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>Kue Lumpur</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>Kue Pepe</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Lapis Legit</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>Marmer Cake</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>Mini Choco Donut</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Pie Buah</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>Pisang Choco Bolen</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>Roti Cokelat</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>Soes Fla</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>Soes Fruit</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Wajik</td>
-                                    <td>9</td>
-                                </tr>
+                                <?php
+                                $dataTableSweet = $db->query("SELECT * FROM tb_ss WHERE type='sweet' ORDER BY id ASC");
+                                if (mysqli_num_rows($dataTableSweet) > 0) {
+                                    $no = 0;
+                                    while ($rowSweet = mysqli_fetch_array($dataTableSweet)) {
+                                        $no++;
+                                ?>
+                                        <tr>
+                                            <td><?= $rowSweet['name']; ?></td>
+                                            <td align="right"><?= $rowSweet['pcs']; ?></td>
+                                        </tr>
+                                    <?php } ?>
+                                <?php } else { ?>
+                                <?php } ?>
                             </tbody>
                         </table>
                     </div>
@@ -171,86 +101,20 @@ $Rus = mysqli_fetch_array($Qus);
                                         </center>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>Arem Arem</td>
-                                    <td align="right">9</td>
-                                </tr>
-                                <tr>
-                                    <td>Canape Smoke Beef</td>
-                                    <td align="right">9</td>
-                                </tr>
-                                <tr>
-                                    <td>Chicken Pie Regular</td>
-                                    <td align="right">13</td>
-                                </tr>
-                                <tr>
-                                    <td>Kroket</td>
-                                    <td align="right">9</td>
-                                </tr>
-                                <tr>
-                                    <td>Kacang Telor</td>
-                                    <td align="right">9</td>
-                                </tr>
-                                <tr>
-                                    <td>Lemper Ayam</td>
-                                    <td align="right">9</td>
-                                </tr>
-                                <tr>
-                                    <td>Lumpia</td>
-                                    <td align="right">9</td>
-                                </tr>
-                                <tr>
-                                    <td>Macaroni Schotel</td>
-                                    <td align="right">11</td>
-                                </tr>
-                                <tr>
-                                    <td>Martabak Telur</td>
-                                    <td align="right">9</td>
-                                </tr>
-                                <tr>
-                                    <td>Pastel</td>
-                                    <td align="right">9</td>
-                                </tr>
-                                <tr>
-                                    <td>Pisang Keju Bolen</td>
-                                    <td align="right">10</td>
-                                </tr>
-                                <tr>
-                                    <td>Risol Mayonaise</td>
-                                    <td align="right">9</td>
-                                </tr>
-                                <tr>
-                                    <td>Roti Pisang Keju</td>
-                                    <td align="right">9</td>
-                                </tr>
-                                <tr>
-                                    <td>Roti Sosis</td>
-                                    <td align="right">8</td>
-                                </tr>
-                                <tr>
-                                    <td>Semer Mendem</td>
-                                    <td align="right">9</td>
-                                </tr>
-                                <tr>
-                                    <td>Sosis Solo</td>
-                                    <td align="right">9</td>
-                                </tr>
-                                <tr>
-                                    <td>Tahu Isi</td>
-                                    <td align="right">12</td>
-                                </tr>
-                                <tr>
-                                    <td>Croissant Plain</td>
-                                    <td align="right">10</td>
-                                </tr>
-                                <tr>
-                                    <td>Croissant Cokelat</td>
-                                    <td align="right">11</td>
-                                </tr>
-                                <tr>
-                                    <td>Croissant Keju</td>
-                                    <td align="right">11</td>
-                                </tr>
+                                <?php
+                                $dataTableSavory = $db->query("SELECT * FROM tb_ss WHERE type='savory' ORDER BY id ASC");
+                                if (mysqli_num_rows($dataTableSavory) > 0) {
+                                    $no = 0;
+                                    while ($rowSavory = mysqli_fetch_array($dataTableSavory)) {
+                                        $no++;
+                                ?>
+                                        <tr>
+                                            <td><?= $rowSavory['name']; ?></td>
+                                            <td align="right"><?= $rowSavory['pcs']; ?></td>
+                                        </tr>
+                                    <?php } ?>
+                                <?php } else { ?>
+                                <?php } ?>
                             </tbody>
                         </table>
                     </div>
